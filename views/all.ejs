@@ -1,0 +1,12 @@
+<div>
+
+   <% params.map(message => { %>
+      <h1><%= message.text %></h1>
+      <h2><%= message.user %></h2>
+      <h3><%= message.added %></h3>
+      <form action="/messages/<%= message.id%>"">
+         <button type="submit">Open</button>
+      </form>
+   <% })  %>
+
+</div>
